@@ -24,18 +24,18 @@ namespace s10266700G_Prg
         private Dictionary<String, Flight> flights;
         public Dictionary<String, Flight> Flights
         {
-            get { return Flights}
+            get { return Flights; }
             set { flights = value; }
         }
-        public Airline(string name, string code, Dictionary<String, Flight> Flights)
+        public Airline(string n, string c, Dictionary<String, Flight> f)
         {
-            Name = name;
-            Code = code;
-            Flights = flights;
+            name = n;
+            code = c;
+            flights = f;
         }
         public bool AddFlight(flight)
         {
-
+            return true;
         }
         public double CalculateFees()
         {
@@ -43,9 +43,14 @@ namespace s10266700G_Prg
         }
         public bool RemoveFlight(Flight)
         {
-
+            return true;
         }
-        public override string ToString() {
+        public override string ToString()
+        {
+            return name;
         }
+        
+        
+        
     }
 }  

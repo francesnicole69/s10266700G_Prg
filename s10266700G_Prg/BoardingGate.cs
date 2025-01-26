@@ -8,11 +8,11 @@ namespace s10266700G_Prg
 {
     internal class BoardingGate
     {
-        private string getName;
-        public string GetName
+        private string gateName;
+        public string GateName
         {
-            get { return getName; }
-            set { getName = value; }
+            get { return gateName; }
+            set { gateName = value; }
         }
 
         private bool supportsCFFT;
@@ -42,21 +42,21 @@ namespace s10266700G_Prg
             set { flight = value; }
         }
         public BoardingGate() { }
-        public BoardingGate(string getName, bool supportsCFFT, bool supportsDDJB, bool supportsWTT, Flight flight)
+        public BoardingGate(string gn, bool sCFFT, bool sDDJB, bool sWTT, Flight f)
         {
-            GetName = getName;
-            SupportsCFFT = supportsCFFT;
-            SupportsDDJB = supportsDDJB;
-            SupportsWTT = supportsWTT;
-            Flight = flight;
+            gateName = gn;
+            supportsCFFT = sCFFT;
+            supportsDDJB = sDDJB;
+            supportsWTT = sWTT;
+            flight = f;
         }
-        public void CalculateFees()
+        public double CalculateFees()
         {
 
         }
         public override string ToString()
         {
-            return "get"
+            return "get";
         }
 
     }
