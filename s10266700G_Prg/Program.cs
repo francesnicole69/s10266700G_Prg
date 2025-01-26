@@ -1,4 +1,4 @@
-﻿using s10266700G_Prg;
+using s10266700G_Prg;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,6 +6,8 @@ using System.IO;
 
 namespace AirlineBoardingGateApp
 {
+
+// alson s10266700G
     internal class Program
     {
         static void Main(string[] args)
@@ -97,3 +99,4 @@ namespace AirlineBoardingGateApp
             }
         }
     }
+}
