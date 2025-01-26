@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,11 +52,11 @@ namespace s10266700G_Prg
         }
         public double CalculateFees()
         {
-
+            return 1;
         }
         public override string ToString()
         {
-            return "get";
+            return ($"GateName:{gateName} SupportCFFT:{supportsCFFT} SupportsDDJB:{supportsDDJB} SupportLWTT{SupportsDDJB} flight: {flight}");
         }
 
     }
